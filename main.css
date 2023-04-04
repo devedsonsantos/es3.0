@@ -240,6 +240,35 @@ body {
     text-decoration: none;
 }
 
+.footer {
+    background-color: #262626;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .navbar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+}
+
+.footer .logo {
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
