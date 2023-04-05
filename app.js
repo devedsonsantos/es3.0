@@ -33,3 +33,20 @@ links.forEach(link => {
         });
     });
 });
+
+
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Previne o comportamento padrão do link
+
+        const href = link.getAttribute('href');
+
+        const target = document.querySelector(href);
+        const offsetTop = target.offsetTop;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
